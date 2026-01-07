@@ -35,11 +35,11 @@ lt.from(".centre h1",{
 .to("#img1",{ rotate: -30, duration: 0.4 });
 
 gsap.to(".page2 h1",{
-    transform:"translateX(-170%)",
+    transform:"translateX(-180%)",
     scrollTrigger:{
         trigger:".page2",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 0%",
         end:"top -100%",
         scrub:3,
