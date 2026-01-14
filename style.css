@@ -136,11 +136,14 @@ li:hover {
   width: 100%;
   background-color: #000000;
   padding: 0px 90px ;
+  cursor: none;
+  z-index: 10;
 }
 .page2 h1{
   color: #fff;
   font-size: 40vw;
   font-family: "Atomic Age";
+  
   /* transform: translateX(-150%); */
 }
 .page3{
@@ -156,5 +159,4 @@ li:hover {
   position: fixed;
   z-index: 9;
 }
-
 
