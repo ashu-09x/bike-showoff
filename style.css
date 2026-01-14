@@ -150,13 +150,24 @@ li:hover {
   height: 100vh;
   width: 100%;
   background-color: #ffffff;
+  
 }
-.cursor{
-  height: 40px;
-  width: 40px;
-  background-color: #5e5353;
+.cursor {
+  height: 30px;
+  width: 30px;
+  background-color: #5e535368;
   border-radius: 50%;
   position: fixed;
   z-index: 9;
+  pointer-events: none;
+
+  /* 👇 IMPORTANT */
+  opacity: 0;
 }
+
+body.show-cursor .cursor {
+  opacity: 1;
+}
+
+
 
