@@ -148,3 +148,13 @@ li:hover {
   width: 100%;
   background-color: #ffffff;
 }
+.cursor{
+  height: 40px;
+  width: 40px;
+  background-color: #5e5353;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9;
+}
+
+
