@@ -16,6 +16,7 @@ nav {
   justify-content: space-between;
   padding: 30px 30px;
 }
+
 .left {
   display: flex;
   cursor: pointer;
@@ -25,24 +26,27 @@ nav {
   border: 1px rgb(255, 255, 255) solid;
   color: rgb(249, 247, 247);
 }
+
 nav h3 {
   font-size: 15px;
   font-weight: 500;
-    border: 1px black solid;
+  border: 1px black solid;
 
   color: #000000;
   border-radius: 25px;
   padding: 4px 12px;
 }
+
 nav i {
   font-size: 15px;
   font-weight: 500;
   color: #000000;
-    border: 1px black solid;
+  border: 1px black solid;
 
   border-radius: 15px;
   padding: 4px;
 }
+
 nav h1 {
   font-size: 20px;
   font-weight: 500;
@@ -62,16 +66,19 @@ button {
   /* color: rgb(0, 0, 0); */
   border: 1px black solid;
 }
+
 #signup {
   background-color: orangered;
   color: #fff;
   border: 1px orangered solid;
 }
-.page1{
+
+.page1 {
   height: 100vh;
   width: 100%;
 }
-.page1 > h1 {
+
+.page1>h1 {
   font-family: "Aldrich";
   font-size: 150px;
   width: 100%;
@@ -85,8 +92,8 @@ button {
 }
 
 img {
-  height: 500px;
-  width: 400px;
+  height: 400px;
+  width: 300px;
   object-fit: cover;
   border-radius: 15px;
   position: absolute;
@@ -105,11 +112,13 @@ img {
   background-color: rgba(255, 68, 0, 0.486);
   cursor: pointer;
 }
+
 .menu div {
   position: absolute;
   width: 100%;
   top: 60px;
 }
+
 #cross {
   position: absolute;
   left: 10%;
@@ -118,61 +127,65 @@ img {
   color: #fff;
   cursor: pointer;
 }
+
 ul {
   display: flex;
   flex-direction: column;
   list-style: none;
 }
+
 li {
   padding: 10px 40px;
   margin-top: 10px;
   font-size: 20px;
 }
+
 li:hover {
   background-color: #d43b3b;
 }
-.page2{
+
+
+.page2 {
   height: 100vh;
   width: 100%;
   background-color: #000000;
-  padding: 0px 90px ;
+  padding: 0px 90px;
   cursor: none;
   z-index: 10;
 }
-.page2 h1{
+
+.page2 h1 {
   color: #fff;
   font-size: 40vw;
   font-family: "Atomic Age";
-  
+
   /* transform: translateX(-150%); */
 }
-.page3{
+
+.page3 {
   height: 100vh;
   width: 100%;
-  background: 
-  
-  linear-gradient(
-    rgba(255, 255, 255, 0.14) 1px,
-    transparent 1px
-    
-    ),
-    
-    linear-gradient(
-      90deg, 
+  background:
+
+    linear-gradient(rgba(255, 255, 255, 0.14) 1px,
+      transparent 1px),
+
+    linear-gradient(90deg,
       rgba(255, 255, 255, 0.14) 1px,
       transparent 1px);
-      
-      background-size: 
-      60px 60px;
-      background-color: #020324;
-      color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: none;
+
+  background-size:
+    60px 60px;
+  background-color: #020324;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
 
 }
+
 .cursor {
   height: 30px;
   width: 30px;
@@ -190,10 +203,10 @@ body.show-cursor .cursor {
   opacity: 1;
 }
 
-.page3>h1{
-  font-size: 150px;
+.page3>h1 {
+  font-size: 100px;
   font-weight: 400;
-  text-transform:uppercase ;
+  text-transform: uppercase;
   font-family: "EB Garamond", serif;
 }
 
@@ -217,8 +230,13 @@ body.show-cursor .cursor {
 }
 
 @keyframes colors {
-  from { filter: hue-rotate(0deg); }
-  to   { filter: hue-rotate(360deg); }
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .cursor2::before {
@@ -232,4 +250,32 @@ body.show-cursor .cursor {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.phone {
+  display: none;
+}
+
+@media (max-width:820px) {
+  .phone {
+    background-color: #2f2f2f;
+    color: aliceblue;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100svh;
+  }
+  .phone p {
+    border: #f22ff2 solid 1px;
+    border-radius: 15px;
+    margin: 600px 20px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .main{
+    display: none;
+  }
 }
